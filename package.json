@@ -1,0 +1,23 @@
+{
+  "name": "portofoliohardus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Berndzz/portofoliohardus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Berndzz/portofoliohardus/issues"
+  },
+  "homepage": "https://github.com/Berndzz/portofoliohardus#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
