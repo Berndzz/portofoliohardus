@@ -51,3 +51,27 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 } else {
   darkToggle.checked = false;
 }
+
+
+const sendButton = document.getElementById('send-button');
+const contactForm = document.getElementById('contact-form');
+const errorMessage = document.getElementById('error-message');
+sendButton.addEventListener('click', (event) => {
+    if (!contactForm.checkValidity()) {
+        event.preventDefault(); // Prevent the form from submitting
+        // Display error message
+        errorMessage.textContent = 'Please fill out all required fields. ⚠️';
+        // Highlight invalid fields
+        const invalidFields = contactForm.querySelectorAll(':invalid');
+        for (const field of invalidFields) {
+            field.classList.add('invalid');
+        }
+    } else {
+        // If the form is valid, clear the error message and remove any invalid field highlighting
+        errorMessage.textContent = '';
+        const invalidFields = contactForm.querySelectorAll(':invalid');
+        for (const field of invalidFields) {
+            field.classList.remove('invalid');
+        }
+    }
+});
