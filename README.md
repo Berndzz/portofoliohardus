@@ -1,2 +1,4 @@
 # portofoliohardus
-u can see the live preview in this link https://berndzz.github.io/portofoliohardus/
+
+===================
+You can view the portfolio by visiting this link: https://hardustukan.com/.
